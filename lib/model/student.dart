@@ -1,0 +1,12 @@
+import 'package:hive/hive.dart';
+part 'student.g.dart';
+
+@HiveType(typeId: 0)
+class Student {
+  @HiveField(0)
+  String name;
+  @HiveField(1)
+  int nim;
+
+  Student(this.name, this.nim);
+}
